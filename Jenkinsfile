@@ -30,5 +30,12 @@ pipeline {
                 echo "Started stage prod"
             }
         }
+        
+        stage("deploy"){
+            steps{
+                deployTomcat( 
+                    war: "target/SampleWebApp.war"
+                      ) 
+            }
     }
 }
