@@ -8,7 +8,7 @@ pipeline {
                
                 gitCheckout(
                     branch: "master",
-                    url: "https://github.com/musthu1837/multi-branch-pipe-line.git"
+                    url: "https://github.com/musthu1837/MavenWebApp.git"
                 )
             }
         }    
