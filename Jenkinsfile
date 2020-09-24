@@ -35,7 +35,8 @@ pipeline {
             steps{
                 deployTomcat( 
                     war: "target/SampleWebApp.war"
-                      ) 
+               ) 
             }
+        }
     }
 }
