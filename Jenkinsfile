@@ -33,9 +33,9 @@ pipeline {
         
         stage("deploy"){
             steps{
-                deployTomcat( 
-                    war: "target/SampleWebApp.war"
-               ) 
+                script{
+                    deploySystems.mavenDeploy(war: "target/SampleWebApp.war")
+                }                
             }
         }
     }
